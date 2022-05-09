@@ -67,8 +67,8 @@ figure img {
 
 /* Left Sidebar Column */
 .left-sidebar {
-    background:#fff;
-    border-right: 1px solid #000;
+    background:rgba(250, 244, 244, 0.993);
+    border-right: 0px solid #000;
     border-bottom: 1px solid #000;
 }
 
