@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <title>Roger Berkley</title>
@@ -11,47 +12,67 @@
     <!-- Link to your general site styles -->
     <link rel="stylesheet" type="text/css" href="css/site-styles.css" />
 </head>
+
 <body>
-<header data-r-c data-join data-middle class="header">
-    <figure data-md1-6>
+    <header data-r-c data-join data-middle class="header">
+        <!--<figure data-md1-6>
             <h1>My personal page</h1>
-    </figure>
-</header>
-<r-c join>
-    <aside data-md1-3 data-md1 class="left-sidebar">
-        <img src="../assets\Roger_b_md.png" width="150" height="150" alt="me">
-        <h2>Roger Berkley</h2>
-        <p>🏠 The Hague, Netherlands</p>
-        <p><a href="https://github.com/rogerberkley">Github</a><span> / </span><a href="https://linkedin.com/in/rby">LinkedIn</a></p>
-        <em>Not available on any other sites.</em>
-    </aside>
-    <main data-md2-3 class="main-content">
-        <h1>About me</h1>
-        <h3>Interests</h3>
-        Music, travel, infotech.
-        <h3>Current professional interests</h3>
-        <p>Startups, Software Product Development, Rapid Software Delivery.</p>
-        <h3>Biztech powers</h3>
-        <p>BPM, BPR, BPA, RAD + Agile.</p>
-        <h3>Education</h3>
-        <ul>
-            <li>M.Sc. Information Management</li>
-            <li>M.Sc. Computer Science</li>
-            <li>M.Sc. Service Engineering</li>
-            <li>B.Sc. Management Information Systems</li>            
-        </ul>
-        <h3>Useful links</h3>
-        <a href="https://solutionsreview.com/business-process-management/the-top-best-business-process-management-books/" target="_blank" rel="noopener">Best BPM Books</a><span> / </span>
-        <a href="https://roadmap.sh/frontend" target="_blank" rel="noopener">FE Dev Roadmap</a><span> / </span>
-        <a href="https://roadmap.sh/backend" target="_blank" rel="noopener">BE Dev Roadmap</a><span> / </span>
-        <a href="https://roadmap.sh/devops" target="_blank" rel="noopener">DevOps Roadmap</a>
-    </main>
-</r-c>
-<footer data-r-c data-join class="footer">
-    <c1-1>
-        <p><small>rogerberkley.com ©2022</small></p>
-        <p><small>Made with <a href="https://matthewjamestaylor.com/responsive-columns" target="_blank" rel="noopener">Responsive Columns</a>.</small></p>
-    </c1-1>
-</footer>
+    </figure> -->
+
+        <c1-2 class="left-sidebar-header">
+            <h1>My personal page</h1>
+        </c1-2>
+        <c1-2 class="right-sidebar-header">
+            <label class="switch" onchange="darkMode()">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+        </c1-2>
+    </header>
+    <r-c join>
+        <aside data-md1-3 data-md1 class="left-sidebar">
+            <img src="../assets\Roger_b_md.png" width="150" height="150" alt="me">
+            <h2>Roger Berkley</h2>
+            <p>🏠 The Hague, Netherlands</p>
+            <p><a href="https://github.com/rogerberkley">Github</a><span> / </span><a href="https://linkedin.com/in/rby">LinkedIn</a></p>
+            <em>Not available on any other sites.</em>
+        </aside>
+        <main data-md2-3 class="main-content">
+            <h1>About me</h1>
+            <h3>Interests</h3>
+            Music, travel, infotech.
+            <h3>Current professional interests</h3>
+            <p>Startups, Software Product Development, Rapid Software Delivery.</p>
+            <h3>Biztech powers</h3>
+            <p>BPM, BPR, BPA, RAD + Agile.</p>
+            <h3>Education</h3>
+            <ul>
+                <li>M.Sc. Information Management</li>
+                <li>M.Sc. Computer Science</li>
+                <li>M.Sc. Service Engineering</li>
+                <li>B.Sc. Management Information Systems</li>
+            </ul>
+            <h3>Useful links</h3>
+            <a href="https://solutionsreview.com/business-process-management/the-top-best-business-process-management-books/" target="_blank" rel="noopener">Best BPM Books</a><span> / </span>
+            <a href="https://roadmap.sh/frontend" target="_blank" rel="noopener">FE Dev Roadmap</a><span> / </span>
+            <a href="https://roadmap.sh/backend" target="_blank" rel="noopener">BE Dev Roadmap</a><span> / </span>
+            <a href="https://roadmap.sh/devops" target="_blank" rel="noopener">DevOps Roadmap</a>
+        </main>
+    </r-c>
+    <footer data-r-c data-join class="footer">
+        <c1-1>
+            <p><small>rogerberkley.com ©2022</small></p>
+            <p><small>Made with <a href="https://matthewjamestaylor.com/responsive-columns" target="_blank" rel="noopener">Responsive Columns</a>.</small></p>
+        </c1-1>
+    </footer>
+
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
 </body>
+
 </html>
