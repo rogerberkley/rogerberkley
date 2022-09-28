@@ -34,7 +34,7 @@ r-c,
 
 [join]>*,
 [data-join]>* {
-    padding: calc(5.455px + 1.42041vw)
+    padding: 5.455px + 1.42041vw
 }
 
 [r-c] {
