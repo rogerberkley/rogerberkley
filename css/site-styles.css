@@ -42,7 +42,7 @@ figure img {
 /* Header */
 
 .header {
-    border-bottom: 1px solid #000;
+    border-bottom: 0px solid #000;
     padding: 0;
     text-align: center;
 }
@@ -162,7 +162,7 @@ input:checked+.slider:before {
 /* Main Content Column */
 
 .main-content {
-    border-bottom: 1px solid #000;
+    border-bottom: 0px solid #000;
 }
 
 
@@ -170,7 +170,7 @@ input:checked+.slider:before {
 
 .left-sidebar {
     border-right: 0px solid #000;
-    border-bottom: 1px solid #000;
+    border-bottom: 0px solid #000;
 }
 
 
