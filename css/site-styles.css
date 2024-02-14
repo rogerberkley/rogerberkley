@@ -14,12 +14,12 @@ body {
 }
 
 a {
-    color: #004e9d;
+    color: #0078f0;
     /* Link color */
 }
 
 a:hover {
-    color: #000;
+    color: #5e5e5e;
     /* Hovered link color */
 }
 
@@ -91,11 +91,11 @@ figure img {
 }
 
 input:checked+.slider {
-    background-color: #2196F3;
+    background-color: #0078f0;
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #0078f0;
 }
 
 input:checked+.slider:before {
@@ -192,4 +192,5 @@ input:checked+.slider:before {
 .dark-mode {
     background-color: rgb(27, 27, 27);
     color: rgb(206, 206, 206);
+
 }
