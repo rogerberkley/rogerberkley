@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Roger Berkley - More</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="my personal page" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Link to the Responsive Columns CSS -->
+    <link rel="stylesheet" type="text/css" href="css/r-c-min.css" />
+    <!-- Link to your general site styles -->
+    <link rel="stylesheet" type="text/css" href="css/site-styles.css" />
+</head>
+
+<body>
+    <header data-r-c data-join data-middle class="header";>
+        <c1-2 class="left-sidebar-header">
+            <h1>My personal page</h1>
+        </c1-2>
+        <c1-2 class="right-sidebar-header">
+            <label class="switch" onchange="darkMode()">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+        </c1-2>
+    </header>
+    <r-c join>
+        <aside data-md1-3 data-md1 class="left-sidebar">
+            <img src="../assets\Roger_b_md.png" width="150" height="150" alt="me">
+            <h2>Roger Berkley</h2>
+            <p>🏠 Netherlands</p>
+            <p><a href="https://github.com/rogerberkley">Github</a><span>
+        </aside>
+        <main data-md2-3 class="main-content">
+            <h1>Services that I am currently ready to offer</h1>
+            <h3>Corporate Business Services</h3>
+            <ul>
+                <li>Strategic and operational analysis of business and technology structures and their fit.</li>
+                <li>Top-down organizational process architecture discovery.</li>
+                <li>Process transformation framework and maturity model development.</li>
+                <li>End-to-end process discovery and mapping to objective-suitable abstraction levels.</li>
+                <li>Business process transformation design and delivery.</li>
+            </ul>
+            <h3>Corporate Technology Services</h3>
+            <ul>
+                <li>Technology planning and systems transformation strategy.</li>
+                <li>Systems analysis and new software solution design, development and delivery. </li>
+                <li>Process-based software applications from ideation and analysis to development, integration and deployment.</li>
+                <li>Applications performance analysis and improvement.</li>
+                <li>Database design and entity-relationship model development.</li>
+                <li>Identity and access management solution design and configuration including MFA and passwordless logins.</li>
+                <li>Software testing and application security testing.</li>
+            </ul>
+            <h3>SME and Self-standing Services</h3>
+            <p>Depending on your business model and most essential needs, as an SME or a self-standing business you can always take small steps forward that make a bigger impact, I'd be more than happy to find the fastest and easiest ways to either relieve some of your current business headaches or to uptick a certain performance indicator that you are interested in.</p>
+            <h3>Consulting Services</h3>
+            <p>Available to corporations as well as SMEs and Self-standing professionals in fields of business transformation and business process management.</p>
+            <h3>Startup Services</h3>
+            <p>Especially in self-organization and agile methods in software development and in early-stage startup innovation enablement.</p>
+            <h3>Non-profit, Humanitarian and Grassroots Community Efforts</h3>
+            <p>I can be available to assist with my expertise and work for non-profit organizations as well as humanitarian causes and cooperative and/or grassroots community efforts that I find relevant and worthy, pro bono i.e. for free. </p>
+
+            <p><a href="index.html" rel="noopener">Home</a></p>
+
+        </main>
+    </r-c>
+    <footer data-r-c data-join class="footer">
+        <c1-1>
+            <p><small>rogerberkley.com ©2022</small></p>
+            <p><small>Made with <a href="https://matthewjamestaylor.com/responsive-columns" target="_blank" rel="noopener">Responsive Columns</a>.</small></p>
+        </c1-1>
+    </footer>
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
