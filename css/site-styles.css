@@ -245,3 +245,5 @@ input:checked+.slider:before {
     background-color: var(--bg);
     color: var(--text);
   }
+
+
