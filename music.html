@@ -14,24 +14,27 @@
 </head>
 
 <body>
+    <div class="announcement">
+        <p>This is the place :)</p>
+    </div>
     <header data-r-c data-join data-middle class="header">
         <c1-6 class="left-sidebar-header">
             <h3>My personal page</h3>
         </c1-6>
         <c4-6>
             <p>
-            <a href="index.html">Home</a><span>
-            <a href="services.html">Services</a><span>
-            <a href="https://roger-berkley-contact-form.bss.design/" target="_blank">Contact</a><span>
-            <a href="coffee.html" target="_blank">Coffee</a><span>
-            <a href="music.html" target="_blank">Music</a><span></span>
+            <a href="index.html">Home</a><span>&nbsp;&nbsp;&nbsp;
+            <a href="services.html">Services</a><span>&nbsp;&nbsp;&nbsp;
+            <a href="contact.html" target="_blank">Contact</a><span>&nbsp;&nbsp;&nbsp;
+            <a href="coffee.html" target="_blank">Coffee</a><span>&nbsp;&nbsp;&nbsp;
+            <a href="music.html" target="_blank">Music</a><span></span>&nbsp;&nbsp;&nbsp;
             </p>
         </c4-6>
         <c1-6 class="right-sidebar-header">
-            <label class="switch" onchange="darkMode()">
+            <label class="switch" onchange="toggleDarkMode()">
                 <input type="checkbox">
                 <span class="slider round"></span>
-              </label>
+            </label>
         </c1-6>
     </header>
     <r-c join>
@@ -89,10 +92,23 @@
         </c1-1>
     </footer>
     <script>
-        function darkMode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
+        function toggleDarkMode() {
+            const doc = document.querySelector('html');
+            if (getComputedStyle(doc).getPropertyValue('--color-mode') == 'dark') {
+                doc.classList.remove('dark');
+                doc.classList.add('light');
+                pref = 'light';
+            } else {
+                doc.classList.remove('light');
+                doc.classList.add('dark');
+                pref = 'dark';
+            }
+            window.localStorage.setItem('dark-mode-preference', pref);
         }
-    </script>
+    
+        if (window.localStorage.getItem('dark-mode-preference')) {
+        document.querySelector('html').classList.add(window.localStorage.getItem('dark-mode-preference'));
+        }
+        </script>
 </body>
 </html>

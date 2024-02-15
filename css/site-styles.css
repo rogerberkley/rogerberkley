@@ -186,11 +186,62 @@ input:checked+.slider:before {
     border-top: 0px solid #000;
 }
 
+/* Announcement */
 
-/* Dark Mode */
+.announcement {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background: rgb(255, 225, 56);
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 0.8em;
+  }
+  
+  .announcement a { 
+    color: #0078f0; 
+  }
+  
+  .announcement a:hover {
+    color: #5e5e5e;
+  }
 
-.dark-mode {
-    background-color: rgb(27, 27, 27);
-    color: rgb(206, 206, 206);
-
-}
+  /* Persistent Dark Mode*/
+  * {
+    transition: color .0s, background-color .0s;
+  }
+  
+  html {
+    --text: #1b1b1b;
+    --bg: #ffffff;
+    --color-mode:light;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    html {
+    --text: #ffffff;
+    --bg: #1b1b1b;
+    --color-mode:dark;
+    }
+  }
+  
+  html.dark {
+    --text: #ffffff;
+    --bg: #1b1b1b;
+    --color-mode:dark;
+  }
+  
+  html.light {
+    --text: #1b1b1b;
+    --bg: #ffffff;
+    --color-mode:light;
+  }
+  
+  html {
+    background-color: var(--bg);
+    color: var(--text);
+  }

@@ -14,12 +14,10 @@
 </head>
 
 <body>
-
     <div class="announcement">
         <p>Check what's new here!&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="music.html">This way ></a></p>
     </div>
-    
-    <header data-r-c data-join data-middle class="header">    
+    <header data-r-c data-join data-middle class="header">
         <c1-6 class="left-sidebar-header">
             <h3>My personal page</h3>
         </c1-6>
@@ -48,18 +46,11 @@
         </aside>
         <main data-md4-6 data-lg5-6 class="main-content">
             <h3>General interests</h3>
-            <p>Music, travel, information technology.</p>
-            <h3>Current professional interests</h3>
-            <p>Innovation Management, Transformative Business Process Management, Operational Structure Re-Engineering, Organizational Technology Transformation.</p>
-            <h3>Education</h3>
-            <ul>
-                <li>2014 - M.Sc. Information Management*</li>
-                <li>2013 - M.Sc. Computer Science*</li>
-                <li>2012 - M.Sc. Service Engineering*</li>
-                <li>2005-2009 - B.Sc. Management Information Systems</li>
-                <small>* Erasmus Mundus</small>
-            </ul>
-            <p><a href="More.html" rel="noopener">More about my interests and professional experience</a></p>
+
+            <iframe src="https://roger-berkley-contact-form.bss.design/" width="300" height="600" style="border:0px solid black;">
+            </iframe>
+            
+
             <h3>Useful links</h3>
             <a href="https://solutionsreview.com/business-process-management/the-top-best-business-process-management-books/" target="_blank" rel="noopener">Best BPM Books</a><span> / </span>
             <a href="https://roadmap.sh/frontend" target="_blank" rel="noopener">FE Dev Roadmap</a><span> / </span>
@@ -74,23 +65,23 @@
         </c1-1>
     </footer>
     <script>
-    function toggleDarkMode() {
-        const doc = document.querySelector('html');
-        if (getComputedStyle(doc).getPropertyValue('--color-mode') == 'dark') {
-            doc.classList.remove('dark');
-            doc.classList.add('light');
-            pref = 'light';
-        } else {
-            doc.classList.remove('light');
-            doc.classList.add('dark');
-            pref = 'dark';
+        function toggleDarkMode() {
+            const doc = document.querySelector('html');
+            if (getComputedStyle(doc).getPropertyValue('--color-mode') == 'dark') {
+                doc.classList.remove('dark');
+                doc.classList.add('light');
+                pref = 'light';
+            } else {
+                doc.classList.remove('light');
+                doc.classList.add('dark');
+                pref = 'dark';
+            }
+            window.localStorage.setItem('dark-mode-preference', pref);
         }
-        window.localStorage.setItem('dark-mode-preference', pref);
-    }
-
-    if (window.localStorage.getItem('dark-mode-preference')) {
-    document.querySelector('html').classList.add(window.localStorage.getItem('dark-mode-preference'));
-    }
-    </script>
+    
+        if (window.localStorage.getItem('dark-mode-preference')) {
+        document.querySelector('html').classList.add(window.localStorage.getItem('dark-mode-preference'));
+        }
+        </script>
 </body>
 </html>
