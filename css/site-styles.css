@@ -247,3 +247,14 @@ input:checked+.slider:before {
   }
 
 
+  .ldmode {
+    background-color: var(--bg); 
+    min-width: 50px; min-height: 50px; 
+    font-size: x-large;
+    border-width: 0px;
+    border-style: outset;
+    border-color: var(--text);
+    border-image: initial;
+    cursor: pointer;
+  }
+
