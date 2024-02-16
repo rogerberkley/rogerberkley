@@ -258,3 +258,8 @@ input:checked+.slider:before {
     cursor: pointer;
   }
 
+/* iframe dark contents*/
+  .is-dark {
+    filter: invert(89.5%);
+  }
+

@@ -43,14 +43,11 @@
             <p><a href="https://github.com/rogerberkley">Github</a><span></p>
         </aside>
         <main data-md4-6 data-lg4-6 class="main-content">
-
-            
             <div id="topfr" style="width: 100%; float: left; text-align: center;">
                 <div class="subfr" style="width: 300px; height: 510px; margin: 0 auto;">
-                
-                <iframe src="https://roger-berkley-contact-form.bss.design/" width="300px" height="510px" style="border:0px solid black;"></iframe>
-            </div> </div> 
-            
+                    <iframe id="the-iframe" src="https://roger-berkley-contact-form.bss.design/" width="300px" height="510px" style="border:0px solid black;"></iframe>
+                </div> 
+            </div> 
         </main>
     </r-c>
     <footer data-r-c data-join class="footer">
@@ -62,21 +59,67 @@
     <script>
         function toggleDarkMode() {
             const doc = document.querySelector('html');
+            const iframe = document.getElementById('the-iframe');
+            console.log(iframe);
+
             if (getComputedStyle(doc).getPropertyValue('--color-mode') == 'dark') {
                 doc.classList.remove('dark');
                 doc.classList.add('light');
+                iframe.classList.remove('is-dark');
                 pref = 'light';
+
             } else {
                 doc.classList.remove('light');
                 doc.classList.add('dark');
+                iframe.classList.add('is-dark');
                 pref = 'dark';
             }
             window.localStorage.setItem('dark-mode-preference', pref);
         }
+
+
     
         if (window.localStorage.getItem('dark-mode-preference')) {
         document.querySelector('html').classList.add(window.localStorage.getItem('dark-mode-preference'));
         }
-        </script>
+    </script>
+
+    <script>
+        window.onload = function() {
+            // Retrieve the dark mode preference from local storage
+            const darkModePreference = localStorage.getItem('dark-mode-preference');
+
+            // Get the reference to the iframe on the page
+            const iframe = document.getElementById('the-iframe');
+
+            // Check if dark mode preference is set and handle accordingly
+            if (darkModePreference === 'dark') {
+                // Add the dark mode class to the iframe
+                iframe.classList.add('is-dark');
+            } else {
+                // Remove the dark mode class from the iframe
+                iframe.classList.remove('is-dark');
+            }
+        };
+    </script>
+
 </body>
 </html>
+
+
+
+
+<!--
+
+        if (window.localStorage.getItem('dark-mode-preference') == 'dark'){
+            document.getElementById('the-iframe').classList.remove('is-dark');
+        }
+
+        if (window.localStorage.getItem('dark-mode-preference') = 'dark'){
+            document.getElementById('the-iframe').classList.add('is-dark');
+        }
+
+
+
+
+-->
