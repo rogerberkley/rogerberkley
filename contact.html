@@ -56,11 +56,11 @@
             <p><small>Made with <a href="https://matthewjamestaylor.com/responsive-columns" target="_blank" rel="noopener">Responsive Columns</a>.</small></p>
         </c1-1>
     </footer>
+
     <script>
         function toggleDarkMode() {
             const doc = document.querySelector('html');
             const iframe = document.getElementById('the-iframe');
-            console.log(iframe);
 
             if (getComputedStyle(doc).getPropertyValue('--color-mode') == 'dark') {
                 doc.classList.remove('dark');
@@ -78,10 +78,7 @@
         }
 
 
-    
-        if (window.localStorage.getItem('dark-mode-preference')) {
-        document.querySelector('html').classList.add(window.localStorage.getItem('dark-mode-preference'));
-        }
+        
     </script>
 
     <script>
@@ -105,3 +102,10 @@
 
 </body>
 </html>
+
+<!--
+                if (window.localStorage.getItem('dark-mode-preference')) 
+                {
+                document.querySelector('html').classList.add(window.localStorage.getItem('dark-mode-preference'));
+                }
+        -->
