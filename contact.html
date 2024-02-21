@@ -66,18 +66,23 @@
                 doc.classList.remove('dark');
                 doc.classList.add('light');
                 iframe.classList.remove('is-dark');
+                iframe.classlist.add('is-light');
                 pref = 'light';
 
             } else {
                 doc.classList.remove('light');
                 doc.classList.add('dark');
+                iframe.classlist.remove('is-light');
                 iframe.classList.add('is-dark');
                 pref = 'dark';
             }
             window.localStorage.setItem('dark-mode-preference', pref);
         }
 
-
+        if (window.localStorage.getItem('dark-mode-preference')) 
+                {
+                document.querySelector('html').classList.add(window.localStorage.getItem('dark-mode-preference'));
+                }
         
     </script>
 
@@ -85,6 +90,7 @@
         window.onload = function() {
             // Retrieve the dark mode preference from local storage
             const darkModePreference = localStorage.getItem('dark-mode-preference');
+            console.log("dm pref" + darkModePreference);
 
             // Get the reference to the iframe on the page
             const iframe = document.getElementById('the-iframe');
@@ -102,10 +108,3 @@
 
 </body>
 </html>
-
-<!--
-                if (window.localStorage.getItem('dark-mode-preference')) 
-                {
-                document.querySelector('html').classList.add(window.localStorage.getItem('dark-mode-preference'));
-                }
-        -->

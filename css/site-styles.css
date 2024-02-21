@@ -263,3 +263,7 @@ input:checked+.slider:before {
     filter: invert(89.5%);
   }
 
+  .is-light {
+    filter:none;
+  }
+
