@@ -1,0 +1,24 @@
+/* Define the default variables for light mode */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --accent-color: #007acc; /* Change this to your preferred accent color */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif; /* Example Google Font */
+}
+
+/* Style for links and buttons */
+a, button {
+    color: var(--accent-color);
+}
+
+/* Dark mode variables */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --accent-color: #00d1b2; /* Accent color can be different for dark mode */
+}
