@@ -1,2 +1,86 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+header {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form {
+    text-align: left;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f75;
+}
+
+.dark-mode {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+.dark-mode section {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+.dark-mode footer {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+.dark-mode form {
+    background-color: #181818;
+    color: #ffffff;
+}
