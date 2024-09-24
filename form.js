@@ -1,15 +1,12 @@
-// Basic form validation or other form handling logic can go here
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
-    form.addEventListener('submit', (e) => {
-        // Example validation: Check if all required fields are filled
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
+// form.js - Basic form handling
+document.getElementById('contact-form')?.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent default form submission
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const message = event.target.message.value;
 
-        if (!name || !email || !message) {
-            alert('Please fill in all fields.');
-            e.preventDefault(); // Prevent form submission if validation fails
-        }
-    });
+    // Handle the form submission (e.g., send to server or display a message)
+    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+    alert('Thank you for your message!'); // Display confirmation
+    event.target.reset(); // Reset form fields
 });

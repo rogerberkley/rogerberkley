@@ -1,21 +1,16 @@
-// Light/Dark Mode Toggle
-const toggleTheme = document.getElementById('theme-toggle');
-
-toggleTheme.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-
-    // Optionally save theme preference to localStorage
-    if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
-    }
-});
-
-// On page load, apply saved theme from localStorage
-window.addEventListener('load', () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
+// theme.js - Manage light/dark mode toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
         document.body.classList.add('dark-mode');
     }
+
+    const darkModeButton = document.createElement('button');
+    darkModeButton.innerText = 'Toggle Dark Mode';
+    darkModeButton.onclick = () => {
+        const darkModeEnabled = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', darkModeEnabled);
+    };
+
+    document.querySelector('header').appendChild(darkModeButton);
 });
