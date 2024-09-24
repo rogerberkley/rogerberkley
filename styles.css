@@ -15,49 +15,42 @@ header {
     color: #333;
     padding: 20px;
     text-align: center;
+    margin: 0 auto;
     transition: background-color 0.3s, color 0.3s;
-}
-
-main {
-    padding: 20px;
+    min-height: 60px;
 }
 
 section {
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 5px;
     background-color: #f0f0f0;
-    transition: background-color 0.3s;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #f0f0f0;
     color: #333;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
     transition: background-color 0.3s, color 0.3s;
 }
 
 form {
-    text-align: left;
-    padding: 10px;
     background-color: #f0f0f0;
     color: #333;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
     transition: background-color 0.3s, color 0.3s;
+    max-width: 500px;
 }
 
-button {
-    background-color: #008CBA;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #005f75;
+.dmodebtn {
+    float: right;
 }
 
 .dark-mode {
