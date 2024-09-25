@@ -10,21 +10,24 @@
 <body>
     <header>
         <button class="btn btn-secondary dmodebtn" id="toggle-dark-mode">
-            <img src="lightbulb-minimalistic-svgrepo-com.svg" alt="dark mode icon" width="30px" height="30px"> 
+            <img class="dmodeing" src="lightbulb-minimalistic-svgrepo-com.svg" alt="dark mode icon"> 
         </button>
     </header>
-    <section id="info">
-        <h1>Roger Berkley, M.Sc.</h1>
-        <p>IT Professional | Specialist in Business Process Automation</p> 
-    </section>
-    <section id="contact">         
-        <form data-bss-recipient="122824838fb8940592c448564d3e795a" data-bss-redirect-url="/index.html">
-            <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name" autocomplete="off" autofocus=""></div>
-            <div class="mb-3"><input class="form-control" type="email" inputmode="email" autocomplete="off" name="email" placeholder="Email"></div>
-            <div class="mb-3"><textarea class="form-control" id="message-2" name="message" rows="6" placeholder="Message" style="resize: none;" autocomplete="off" spellcheck="false"></textarea></div>
-            <div><button class="btn btn-secondary d-block w-100" type="submit">Send </button></div>
-        </form>
-    </section>
+    <main>
+        <section class="pb0" id="info">
+            <h1>Roger Berkley, M.Sc.</h1>
+            <p>IT Professional | Specialist in Business Process Automation</p> 
+        </section>
+        <section class="pt0" id="contact">   
+            <form data-bss-recipient="122824838fb8940592c448564d3e795a" data-bss-redirect-url="/index.html">
+                <div class= "DispGrid left"><small>*All fields required.</small></div>
+                <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name" autocomplete="off" autofocus=""></div>
+                <div class="mb-3"><input class="form-control" type="email" inputmode="email" autocomplete="off" name="email" placeholder="Email"></div>
+                <div class="mb-3"><textarea class="form-control" id="message-2" name="message" rows="6" placeholder="Message" style="resize: none;" autocomplete="off" spellcheck="false"></textarea></div>
+                <div><button class="btn btn-secondary d-block w-100" type="submit">Send </button></div>
+            </form>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Roger Berkley. All rights reserved.</p>
     </footer>

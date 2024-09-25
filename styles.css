@@ -9,8 +9,13 @@ body {
     background-color: #f0f0f0;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
+
 header {
+    display: grid;
     background-color: #f0f0f0;
     color: #333;
     padding: 20px;
@@ -18,7 +23,12 @@ header {
     margin: 0 auto;
     transition: background-color 0.3s, color 0.3s;
     min-height: 60px;
+    width: 100%;
 }
+
+main {
+}
+
 
 section {
     background-color: #f0f0f0;
@@ -41,7 +51,6 @@ footer {
 form {
     background-color: #f0f0f0;
     color: #333;
-    margin: 20px 0;
     padding: 20px;
     text-align: center;
     margin: 0 auto;
@@ -50,7 +59,21 @@ form {
 }
 
 .dmodebtn {
-    float: right;
+    width: 60px;
+    justify-self: right;
+}
+
+.dmodeing {
+    width: 30px;
+    height: 30px;
+}
+
+.DispGrid {
+    display: grid;
+}
+
+.left {
+    justify-content: left;
 }
 
 .dark-mode {
@@ -76,4 +99,12 @@ form {
 .dark-mode form {
     background-color: #181818;
     color: #ffffff;
+}
+
+.pb0 {
+    padding-bottom: 0px;
+}
+
+.pt0 {
+    padding-top: 0px;
 }
